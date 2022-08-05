@@ -2,7 +2,7 @@
 
 # openwechat
 
-[![Go Doc](https://pkg.go.dev/badge/github.com/eatMoreApple/openwechat)](https://godoc.org/github.com/eatMoreApple/openwechat)[![Release](https://img.shields.io/github/v/release/eatmoreapple/openwechat.svg?style=flat-square)](https://github.com/eatmoreapple/openwechat/releases)[![Go Report Card](https://goreportcard.com/badge/github.com/eatmoreapple/openwechat)](https://goreportcard.com/badge/github.com/eatmoreapple/openwechat)[![Stars](https://img.shields.io/github/stars/eatmoreapple/openwechat.svg?style=flat-square)](https://img.shields.io/github/stars/eatmoreapple/openwechat.svg?style=flat-square)[![Forks](https://img.shields.io/github/forks/eatmoreapple/openwechat.svg?style=flat-square)](https://img.shields.io/github/forks/eatmoreapple/openwechat.svg?style=flat-square)
+[![Go Doc](https://pkg.go.dev/badge/github.com/hyperits/openwechat)](https://godoc.org/github.com/hyperits/openwechat)[![Release](https://img.shields.io/github/v/release/eatmoreapple/openwechat.svg?style=flat-square)](https://github.com/hyperits/openwechat/releases)[![Go Report Card](https://goreportcard.com/badge/github.com/hyperits/openwechat)](https://goreportcard.com/badge/github.com/hyperits/openwechat)[![Stars](https://img.shields.io/github/stars/eatmoreapple/openwechat.svg?style=flat-square)](https://img.shields.io/github/stars/eatmoreapple/openwechat.svg?style=flat-square)[![Forks](https://img.shields.io/github/forks/eatmoreapple/openwechat.svg?style=flat-square)](https://img.shields.io/github/forks/eatmoreapple/openwechat.svg?style=flat-square)
 
 > golang版个人微信号API, 突破网页版限制，类似开发公众号一样，开发个人微信号
 
@@ -24,13 +24,13 @@
 `go get`
 
 ```shell
-go get github.com/eatmoreapple/openwechat
+go get github.com/hyperits/openwechat
 ```
 
 `go mod`
 
 ```shell
-require github.com/eatmoreapple/openwechat latest
+require github.com/hyperits/openwechat latest
 ```
 
 
@@ -42,7 +42,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/eatmoreapple/openwechat"
+	"github.com/hyperits/openwechat"
 )
 
 func main() {
@@ -101,7 +101,7 @@ func main() {
 
 ### 项目主页
 
-[https://github.com/eatmoreapple/openwechat](https://github.com/eatmoreapple/openwechat)
+[https://github.com/hyperits/openwechat](https://github.com/hyperits/openwechat)
 
 
 

@@ -37,7 +37,7 @@ package main
 import (
 	"fmt"
 	"github.com/skip2/go-qrcode"
-	"github.com/eatMoreApple/openwechat"
+	"github.com/hyperits/openwechat"
 )
 
 func ConsoleQrCode(uuid string) {
@@ -236,7 +236,7 @@ func (m *MessageMatchDispatcher) OnImage(handlers ...MessageContextHandler)
 func (m *MessageMatchDispatcher) OnVoice(handlers ...MessageContextHandler)
 ```
 
-##### [更多请点击查看源码](https://github.com/eatMoreApple/openwechat/blob/main/message_handle.go)
+##### [更多请点击查看源码](https://github.com/hyperits/openwechat/blob/main/message_handle.go)
 
 
 

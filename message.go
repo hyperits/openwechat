@@ -73,7 +73,7 @@ func (m *Message) SenderInGroup() (*User, error) {
 		return nil, errors.New("message is not from group")
 	}
 	// 拍一拍系列的系统消息
-	// https://github.com/eatmoreapple/openwechat/issues/66
+	// https://github.com/hyperits/openwechat/issues/66
 	if m.IsSystem() {
 		// 判断是否有自己发送
 		if m.FromUserName == m.Bot.self.User.UserName {
@@ -634,7 +634,7 @@ func NewFileAppMessage(stat os.FileInfo, attachId string) *appmsg {
 }
 
 // AppMessageData 获取APP消息的正文
-// See https://github.com/eatmoreapple/openwechat/issues/62
+// See https://github.com/hyperits/openwechat/issues/62
 type AppMessageData struct {
 	XMLName xml.Name `xml:"msg"`
 	AppMsg  struct {
