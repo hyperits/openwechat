@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"log"
 	"net/url"
 	"os/exec"
@@ -264,6 +265,7 @@ func (b *Bot) syncCheck() error {
 				continue
 			}
 			for _, message := range messages {
+				fmt.Println(message)
 				message.init(b)
 				// 默认同步调用
 				// 如果异步调用则需自行处理
