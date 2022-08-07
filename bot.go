@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"fmt"
 	"log"
 	"net/url"
 	"os/exec"
@@ -30,6 +29,8 @@ type Bot struct {
 	Storage             *Storage
 	HotReloadStorage    HotReloadStorage
 	uuid                string
+	DBRepo              *Repositories
+	Nic                 string
 }
 
 // Alive 判断当前用户是否正常在线
@@ -265,7 +266,6 @@ func (b *Bot) syncCheck() error {
 				continue
 			}
 			for _, message := range messages {
-				fmt.Println(message)
 				message.init(b)
 				// 默认同步调用
 				// 如果异步调用则需自行处理
@@ -397,6 +397,8 @@ func DefaultBot(modes ...Mode) *Bot {
 	bot.SyncCheckCallback = func(resp SyncCheckResponse) {
 		log.Printf("RetCode:%s  Selector:%s", resp.RetCode, resp.Selector)
 	}
+	bot.DBRepo = NewRepositories(Configer)
+
 	return bot
 }
 
